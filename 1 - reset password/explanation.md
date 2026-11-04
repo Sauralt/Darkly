@@ -8,12 +8,12 @@ blahblahblah
 
 En regardant dans le forum benjamin parle d'une faille,
 
-[alt text](<../Resources/Screenshot from 2026-11-04 15-11-07.png>)
+![screen](../Resources/Screenshot from 2026-11-04 15-11-07.png)
 
 
 il faut juste mettre mot de passe oublie, mettre le mail du student, changer le mot de passe et se connecter via le nouveau mot de passe
 
-![alt text](../Resources/Screenshot from 2026-11-04 15-11-55.png)
+![screen](../Resources/Screenshot from 2026-11-04 15-11-55.png)
 
 ## comment solutionner le probleme
 
