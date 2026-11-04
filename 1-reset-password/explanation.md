@@ -8,12 +8,12 @@ blahblahblah
 
 En regardant dans le forum benjamin parle d'une faille,
 
-![screen](/Resources/mdp2)
+![mdp11](/Resources/mdp2.png)
 
 
 il faut juste mettre mot de passe oublie, mettre le mail du student, changer le mot de passe et se connecter via le nouveau mot de passe
 
-![screen](/Resources/mdp1)
+![mdp22](/Resources/mdp1.png)
 
 ## comment solutionner le probleme
 
