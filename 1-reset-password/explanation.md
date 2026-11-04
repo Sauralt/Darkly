@@ -15,6 +15,8 @@ il faut juste mettre mot de passe oublie, mettre le mail du student, changer le 
 
 ![mdp22](Resources/mdp1.png)
 
+apres etre connecte sur le compte du student le flag sera dans son profil lorsque l'on va dans editer
+
 ## comment solutionner le probleme
 
 Utiliser un système de cryptage plus sécurisé, rajouter une double authentification, limiter la durée de vie et le nombre de requêtes en cas de tentatives de brut force.
