@@ -8,12 +8,12 @@ blahblahblah
 
 En regardant dans le forum benjamin parle d'une faille,
 
-![screen](/1%20-%20reset%20password/Resources/Screenshot from 2026-11-04 15-11-07.png)
+![screen](/1%20-%20reset%20password/Resources/mdp2)
 
 
 il faut juste mettre mot de passe oublie, mettre le mail du student, changer le mot de passe et se connecter via le nouveau mot de passe
 
-![screen](/1%20-%20reset%20password/Resources/Screenshot from 2026-11-04 15-11-55.png)
+![screen](/1%20-%20reset%20password/Resources/mdp1)
 
 ## comment solutionner le probleme
 
