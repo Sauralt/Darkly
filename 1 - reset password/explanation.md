@@ -9,12 +9,12 @@ Le jeton est renvoyé à l’utilisateur au lieu d’être envoyé par mail. Si 
 
 En regardant dans le forum benjamin parle d'une faille,
 
-![mdp11](Resources/mdp2.png)
+![mdp11](Resources/mdp2.jpeg)
 
 
 il faut juste mettre mot de passe oublie, mettre le mail du student, changer le mot de passe et se connecter via le nouveau mot de passe
 
-![mdp22](Resources/mdp1.png)
+![mdp22](Resources/mdp1.jpeg)
 
 apres etre connecte sur le compte du student le flag sera dans son profil lorsque l'on va dans editer
 
