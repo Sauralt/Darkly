@@ -2,7 +2,7 @@
 
 ## qu'est ce que c'est
 
-blahblahblah
+Une injection se produit quand une application mélange des données fournies par l’utilisateur avec des instructions qu’elle exécute, sans séparer clairement les deux. L’interpréteur ne fait alors plus la différence entre “ce que le développeur a voulu” et “ce que l’utilisateur a écrit”.
 
 ## comment acceder au flag
 

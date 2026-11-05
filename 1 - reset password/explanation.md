@@ -2,7 +2,8 @@
 
 ## qu'est ce que c'est
 
-blahblahblah
+la faille provient d'une faille au niveau du token, n'importe qui peut obtenir ce token et donc l'adresse mail, 
+Le jeton est renvoyé à l’utilisateur au lieu d’être envoyé par mail. Si le lien fonctionne instantanément sans e-mail, c’est que l’étape de preuve de possession est supprimée. Le serveur donne la clé à la personne qui la demande, sans vérifier qui elle est.
 
 ## comment acceder au flag
 

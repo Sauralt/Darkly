@@ -2,8 +2,9 @@
 
 ## qu'est ce que c'est
 
-blahblahblah
+Le format XML permet de définir des entités : des raccourcis réutilisables dans un document, un peu comme des variables. La norme XML permet aussi de déclarer des entités externes, qui vont chercher leur contenu ailleurs — sur le disque local, ou même sur le réseau.
 
+Si une application analyse un fichier XML fourni par l’utilisateur (upload, appel API, flux SOAP...) avec un parseur dont cette fonctionnalité n’a pas été désactivée, l’utilisateur peut définir ses propres entités externes, et le parseur va aller chercher ce qu’elles pointent — ce n’est plus juste de la donnée, c’est une instruction.
 ## comment acceder au flag
 
 apres avoir trouver la faille avec la methode PATCH, un indice nous est laisse par "emilie" disant que l'agenda XML n'est pas valide cote server-side

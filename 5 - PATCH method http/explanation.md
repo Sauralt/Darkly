@@ -2,7 +2,17 @@
 
 ## qu'est ce que c'est
 
-blahblahblah
+Le principe de PATCH
+
+En HTTP, les méthodes ont des rôles différents sur une ressource :
+
+GET : lire
+POST : créer
+PUT : remplacer entièrement une ressource
+PATCH : modifier partiellement une ressource (seulement certains champs)
+DELETE : supprimer
+
+Contrairement à PUT, qui exige l’objet complet, PATCH ne touche que les champs envoyés. C’est exactement ce qui en fait un bon candidat pour chercher des failles : il invite le développeur à écrire une logique “j’accepte un sous-ensemble de champs et je les applique”, et cette logique est souvent moins stricte que celle de création.
 
 ## comment acceder au flag
 

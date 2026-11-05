@@ -2,7 +2,7 @@
 
 ## qu'est ce que c'est
 
-blahblahblah
+L’élévation de privilèges, ce n’est pas une technique d’attaque précise — c’est un objectif : obtenir des droits plus élevés que ceux normalement accordés. C’est souvent la conséquence d’une autre faille (mass assignment, IDOR, endpoint non protégé, injection...) plutôt qu’une catégorie technique à part.
 
 ## comment acceder au flag
 

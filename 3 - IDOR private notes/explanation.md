@@ -2,7 +2,7 @@
 
 ## qu'est ce que c'est
 
-blahblahblah
+Une IDOR, c’est quand une application utilise un identifiant fourni directement par l’utilisateur (dans une URL, un formulaire, une requête API) pour accéder à une ressource, sans vérifier que cet utilisateur a le droit d’accéder à cette ressource précise.
 
 ## comment acceder au flag
 
