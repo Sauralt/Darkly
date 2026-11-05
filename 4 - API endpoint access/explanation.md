@@ -1,8 +1,10 @@
-# 4 API PROJECTS ACCESS
+# 4 API ENDPOINT ACCESS
 
 ## qu'est ce que c'est
 
-blahblahblah
+Une API expose des points d’accès (endpoints) qui permettent de lire ou modifier des données. Un endpoint non protégé, c’est une route qui exécute une action ou renvoie des données sans vérifier que l’appelant en a le droit — voire sans vérifier qui il est du tout.
+
+C’est une faille de contrôle d’accès, cousine de l’IDOR : l’IDOR concerne quelle ressource précise tu peux toucher, l’endpoint non protégé concerne si tu peux appeler la route du tout.
 
 ## comment acceder au flag
 
@@ -12,7 +14,7 @@ en etant connecte a un utilisateur student, on peux acceder en trouvant des indi
 
 en allant sur /api/grades et en regardant un peu les informations, on trouve un nouveau flag
 
- ![api](Resources/api2.png)
+ ![api](Resources/api2.jpeg)
 
 ## comment solutionner le probleme
 

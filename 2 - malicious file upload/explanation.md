@@ -1,8 +1,8 @@
-# 2 - INJECTION PHP ON PDP
+# 2 - MALICIOUS FILE UPLOAD
 
 ## qu'est ce que c'est
 
-Une injection se produit quand une application mélange des données fournies par l’utilisateur avec des instructions qu’elle exécute, sans séparer clairement les deux. L’interpréteur ne fait alors plus la différence entre “ce que le développeur a voulu” et “ce que l’utilisateur a écrit”.
+C’est ce qu’on appelle un “malicious file upload” menant à une RCE (Remote Code Execution), via une injection de commande une fois le fichier exécuté. C’est l’une des failles les plus critiques qui existent, car elle donne un accès direct au serveur, pas juste aux données.
 
 ## comment acceder au flag
 
@@ -14,9 +14,9 @@ code test dans un fichier php :
 <?php echo system('id'): ?>
 ```
 
-![php](Resources/php.png)
+![php](Resources/php.jpeg)
 
 
 ## comment solutionner le probleme
 
-vérifier le type de fichier (pas besoin d’un .pdf pour une pdp), et le contenu du fichier (notamment l'entête
+vérifier le type de fichier (pas besoin d’un .pdf pour une pdp), et le contenu du fichier (notamment l'entête)

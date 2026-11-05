@@ -18,7 +18,7 @@ Contrairement à PUT, qui exige l’objet complet, PATCH ne touche que les champ
 
 en allant dans /staff, un indice nous est laisse disant utiliser PATCH api/profile
 
-![patch](Resources/patch.png)
+![patch](Resources/patch.jpeg)
 
 en rentrant cette commande dans le terminal utilisant la methode PATCH au lieu de la methode GET pour modifier les permissions http dans /api/profile :
 
