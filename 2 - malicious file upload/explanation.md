@@ -6,9 +6,9 @@ C’est ce qu’on appelle un “malicious file upload” menant à une RCE (Rem
 
 ## comment acceder au flag
 
-apres avoir pu se connecter sur le compte, il suffit d'uploader un script en php dans la section pour uploader une photo de profil pour obtenir le flag
+apres avoir pu se connecter sur le compte, il suffit d'uploader un script dans la section pour uploader une photo de profil pour obtenir le flag
 
-code test dans un fichier php : 
+code test dans un fichier : 
 
 ```php
 <?php echo system('id'): ?>
