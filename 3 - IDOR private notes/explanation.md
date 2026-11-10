@@ -1,20 +1,19 @@
 # 3 - IDOR PRIVATE NOTES
 
-## qu'est ce que c'est
+## what is it
 
-Une IDOR, c’est quand une application utilise un identifiant fourni directement par l’utilisateur (dans une URL, un formulaire, une requête API) pour accéder à une ressource, sans vérifier que cet utilisateur a le droit d’accéder à cette ressource précise.
+An IDOR is when an application uses an identifier supplied directly by the user (in a URL, form, or API request) to access a resource without verifying that the user is allowed to access that specific resource.
 
-## comment acceder au flag
+## how to access the flag
 
-Sans etre connecte sur le compte d'un utilisateur, on peux acceder aux notes prives d'un membre du staff du site.
+Without being logged into a user's account, it is possible to access the private notes of a staff member on the site.
 
 ![idor](Resources/idor.png)
 
-dans le forum, un membre du staff (wil) a mit un message parlant d'une maintenance, il suffit de voir son profil pour acceder au flag
+On the forum, a staff member named Wil posted a message about maintenance. It is enough to view his profile to access the flag.
 
 ![idor2](Resources/idor2.png)
 
+## how to fix the problem
 
-## comment solutionner le probleme
-
-Toujours vérifier les autorisations côté serveur et surveiller les fonctions les plus sensibles.
+Always verify permissions on the server side and monitor the most sensitive functions.

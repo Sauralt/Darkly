@@ -1,21 +1,21 @@
 # 4 API ENDPOINT ACCESS
 
-## qu'est ce que c'est
+## what is it
 
-Une API expose des points d’accès (endpoints) qui permettent de lire ou modifier des données. Un endpoint non protégé, c’est une route qui exécute une action ou renvoie des données sans vérifier que l’appelant en a le droit — voire sans vérifier qui il est du tout.
+An API exposes access points (endpoints) that allow data to be read or modified. An unprotected endpoint is a route that executes an action or returns data without checking whether the caller has the right to do so, or even without verifying who the caller is at all.
 
-C’est une faille de contrôle d’accès, cousine de l’IDOR : l’IDOR concerne quelle ressource précise tu peux toucher, l’endpoint non protégé concerne si tu peux appeler la route du tout.
+This is an access control vulnerability, closely related to IDOR: IDOR concerns which specific resource you can access, while an unprotected endpoint concerns whether you can call the route at all.
 
-## comment acceder au flag
+## how to access the flag
 
-en etant connecte a un utilisateur student, on peux acceder en trouvant des indices donnes dans le projet dont robots.txt lorsque l'on met un invalid path.
+When logged in as a student user, access is possible by finding clues in the project, including robots.txt when an invalid path is used.
 
 ![api](Resources/api.png)
 
-en allant sur /api/grades et en regardant un peu les informations, on trouve un nouveau flag
+By going to /api/grades and taking a closer look at the information, a new flag is found.
 
- ![api](Resources/api2.jpeg)
+![api](Resources/api2.jpeg)
 
-## comment solutionner le probleme
+## how to fix the problem
 
-Bloquer l'accès à ceux qui ne devraient pas l’avoir (via une clé, un rôle protege comme il faut etc)
+Block access for those who should not have it (through a key, a properly protected role, etc.).

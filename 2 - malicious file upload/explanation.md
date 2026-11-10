@@ -1,14 +1,14 @@
 # 2 - MALICIOUS FILE UPLOAD
 
-## qu'est ce que c'est
+## what is it
 
-C’est ce qu’on appelle un “malicious file upload” menant à une RCE (Remote Code Execution), via une injection de commande une fois le fichier exécuté. C’est l’une des failles les plus critiques qui existent, car elle donne un accès direct au serveur, pas juste aux données.
+This is what is known as a "malicious file upload" leading to RCE (Remote Code Execution), via command injection once the file is executed. It is one of the most critical vulnerabilities, as it gives direct access to the server, not just to the data.
 
-## comment acceder au flag
+## how to access the flag
 
-apres avoir pu se connecter sur le compte, il suffit d'uploader un script en php dans la section pour uploader une photo de profil pour obtenir le flag
+After logging into the account, it is enough to upload a PHP script in the profile picture upload section to obtain the flag.
 
-code test dans un fichier php : 
+Test code in a PHP file:
 
 ```php
 <?php echo system('id'): ?>
@@ -16,7 +16,6 @@ code test dans un fichier php :
 
 ![php](Resources/php.jpeg)
 
+## how to fix the problem
 
-## comment solutionner le probleme
-
-vérifier le type de fichier (pas besoin d’un .pdf pour une pdp), et le contenu du fichier (notamment l'entête)
+Verify the file type (there is no need for a PDF for a profile picture), and verify the file content (especially the header).

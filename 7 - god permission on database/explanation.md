@@ -1,19 +1,19 @@
 # 7 - GOD PERMISSIONS ON DATABASE
 
-## qu'est ce que c'est
+## what is it
 
-L’élévation de privilèges, ce n’est pas une technique d’attaque précise — c’est un objectif : obtenir des droits plus élevés que ceux normalement accordés. C’est souvent la conséquence d’une autre faille (mass assignment, IDOR, endpoint non protégé, injection...) plutôt qu’une catégorie technique à part.
+Privilege escalation is not a specific attack technique—it is an objective: obtaining higher privileges than those normally granted. It is often the consequence of another vulnerability (mass assignment, IDOR, unprotected endpoint, injection, etc.) rather than a separate technical category.
 
-## comment acceder au flag
+## how to access the flag
 
-maintenant que l'on a les logs admin grace a l'injection XML, on peut se log sur http://localhost:8090/_/ grace au dashboard qui nous donne cette information
+Now that we have the admin logs thanks to the XML injection, we can log in to http://localhost:8090/_/ using the information provided on the dashboard.
 
 ![god](Resources/god.png)
 
-en nous connectant graces aux logs admins, on accede a la database, on peut ensuite s'octroyer les permissions totale en mettant notre profil en "god" et modifier ce que l'on veux, en allant sur la table "internal_audit" on tombe directement sur le flag
+By logging in with the admin credentials, we access the database. We can then grant ourselves full permissions by setting our profile to "god" and modifying anything we want. By going to the "internal_audit" table, we directly find the flag.
 
 ![god](Resources/god2.png)
 
-## comment solutionner le probleme
+## how to fix the problem
 
-Well, mostly the same as xml since the breach comes from it, but also prevent the server from accessing sensible data from xml files.
+Well, mostly the same as with XML, since the breach comes from it, but also prevent the server from accessing sensitive data from XML files.

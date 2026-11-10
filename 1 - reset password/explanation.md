@@ -1,23 +1,24 @@
 # 1 - RESET PASSWORD
 
-## qu'est ce que c'est
+## what is it
 
-la faille provient d'une faille au niveau du token, n'importe qui peut obtenir ce token et donc l'adresse mail, 
-Le jeton est renvoyé à l’utilisateur au lieu d’être envoyé par mail. Si le lien fonctionne instantanément sans e-mail, c’est que l’étape de preuve de possession est supprimée. Le serveur donne la clé à la personne qui la demande, sans vérifier qui elle est.
+The vulnerability comes from a flaw in the token: anyone can obtain this token and therefore the email address.
+The token is returned to the user instead of being sent by email. If the link works instantly without an email, it means the proof-of-possession step has been removed. The server gives the key to whoever requests it, without verifying their identity.
 
-## comment acceder au flag
+## how to access the flag
 
-En regardant dans le forum benjamin parle d'une faille,
+By looking at the Benjamin forum, there is mention of a vulnerability:
 
 ![mdp11](Resources/mdp2.jpeg)
 
-
-il faut juste mettre mot de passe oublie, mettre le mail du student, changer le mot de passe et se connecter via le nouveau mot de passe
+You just need to use the "forgot password" feature, enter the student's email, change the password, and log in with the new password.
 
 ![mdp22](Resources/mdp1.jpeg)
 
-apres etre connecte sur le compte du student le flag sera dans son profil lorsque l'on va dans editer
+After logging into the student's account, the flag will be in their profile when you go to edit it.
 
-## comment solutionner le probleme
+## how to fix the problem
 
-Utiliser un système de cryptage plus sécurisé, rajouter une double authentification, limiter la durée de vie et le nombre de requêtes en cas de tentatives de brut force.
+Use a more secure encryption system, add two-factor authentication, and limit the lifetime and number of requests in case of brute-force attempts.
+
+
