@@ -39,5 +39,5 @@ For each vulnerability found:
 | --- | --- |
 | 1 - JWT leak in sources comments | [Details](<Vulnerabilities/1 - JWT in comments/explanation.md>) |
 | 2 - Use of JWT to impersonate an existing account like admins | [Details](<Vulnerabilities/2 - JWT not secured/explanation.md>) |
-| 3 - No strong password policy and leaked md5 hashed passwords in admin panel | [Details](<Vulnerabilities/3 - Bad Password 2B leaked md5 hash/explanation.md>) |
+| 3 - No strong password policy and leaked md5 hashed passwords in admin panel | [Details](Vulnerabilities/3%20-%20Bad%20Password%20%2B%20leaked%20md5%20hash/explanations.md) |
 | 4 - No lock on password error | [Details](<Vulnerabilities/4 - No lock for connecting/explanation.md>) |
