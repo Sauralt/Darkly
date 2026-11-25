@@ -2,36 +2,46 @@
 
 ## Description
 
-Darkly est un projet pédagogique de l'école 42 axé sur la sécurité web. L'objectif est d'identifier et d'exploiter un ensemble de vulnérabilités présentes sur une application volontairement vulnérable, dans un cadre d'apprentissage contrôlé.
+Darkly is an educational project from 42 focused on web security. The goal is to identify and exploit a set of vulnerabilities in an intentionally vulnerable application, within a controlled learning environment.
 
-## Objectif
+## Objective
 
-Trouver et documenter l'ensemble des failles de sécurité présentes dans l'application, en respectant une méthodologie claire pour chacune : découverte, preuve de concept, impact, et correction proposée.
+Find and document all the security flaws present in the application, following a clear methodology for each one: discovery, proof of concept, impact, and proposed fix.
 
-## Environnement de test
+## Test environment
 
-- **URL cible** : `http://localhost:XXXX`
-- **Outils utilisés** : navigateur (DevTools), curl
+- **Target URL**: `http://localhost:XXXX`
+- **Tools used**: browser (DevTools), curl
 
-## Méthodologie
+## Methodology
 
-Pour chaque vulnérabilité trouvée :
-1. Identifier le point d'entrée (formulaire, endpoint API, upload, etc.)
-2. Confirmer la faille avec une preuve de concept minimale
-3. Évaluer l'impact (lecture de données, escalade de privilèges, exécution de code, etc.)
-4. Documenter le payload exact utilisé
-5. Proposer une remédiation
+For each vulnerability found:
 
-## Liste des brèches trouvées
+1. Identify the entry point (form, API endpoint, upload, etc.)
+2. Confirm the flaw with a minimal proof of concept
+3. Assess the impact (data read access, privilege escalation, code execution, etc.)
+4. Document the exact payload used
+5. Propose a remediation
 
-| Faille | Flag |
+## List of vulnerabilities found
+
+| Vulnerability | Flag |
 | --- | --- |
 | 1 - Reset Password | FLAG{r3s3t_t0k3n_w4s_just_md5_lol} |
-| 2 - injection php in pfp | FLAG{unr3str1ct3d_upl0ad_g0_brrr} |
+| 2 - PHP injection in profile picture | FLAG{unr3str1ct3d_upl0ad_g0_brrr} |
 | 3 - IDOR private notes | FLAG{1d0r_ur_pr0f1l3_1s_m1n3} |
-| 4 - api project access | FLAG{md5_Is_4_n4m3pl4t3_n0t_4_l0ck} |
-| 5 - PATCH method http | FLAG{just_p4tch_y0ur_0wn_r0l3_lol} |
-| 6 - injection XML | FLAG{d3fus3dxml_n3xt_spr1nt_pr0m1s3} |
-| 7 - god permissions on database | FLAG{th3_und3rsc0r3_sl4sh_kn0ws_th3_w4y} |
+| 4 - API project access | FLAG{md5_Is_4_n4m3pl4t3_n0t_4_l0ck} |
+| 5 - PATCH HTTP method | FLAG{just_p4tch_y0ur_0wn_r0l3_lol} |
+| 6 - XML injection | FLAG{d3fus3dxml_n3xt_spr1nt_pr0m1s3} |
+| 7 - God permissions on database | FLAG{th3_und3rsc0r3_sl4sh_kn0ws_th3_w4y} |
 
-## Note finale
+### Vulnerabilities without flags :
+1 - JWT leak in sources comments
+
+2 - Use of JWT to impersonate an existing account like admins
+
+3 - No strong password policy and leaked md5 hashed passwords in admin panel
+
+4 - No lock on password error
+
+Everything is explained in each vulnerability 'explanation.md'.
